@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+hr{
+    background-color: #464646;
+    height: 1px;
+    border: none;
+}
+#navbar{
+    background-color: #212121;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+#nav-menu{
+    background-color: #212121;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    left: -100%;
+    transition: 850ms;
+}
+#nav-menu.active{
+    left:0;
+    transition: 350ms;
+}
+.nav-text{
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    height: 50px;
+    padding: 1rem;
+}
+.nav-text a{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+
+}
+.nav-text:hover{
+    background-color: rgba(144,144,144,0.219);
+    cursor: pointer;
+}
+.nav-menu-items{
+    width: 100%;
+}
+.nav-icon{
+    padding-right: 1rem;
+    color: #909090;
+}
+#youtube-logo{
+    color:#F90201;
+    padding-left: 2rem;
+}
+#navbar-toggle{
+    background-color: #212121;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#navbar-toggle h1{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+#navbar-toggle a{
+    text-decoration: none;
+}
+.fa-bars{
+    color: #fff;
+}
+.nav-section{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#middle-navbar{
+    color: white;
+ 
+    display: flex;
+    margin-left: 200px;
+
+
+}
+#middle-navbar input{
+    width: 800px;
+    height: 32px;
+    background-color:  #2F2F2F;
+    color: white;
+}
+#middle-navbar button{
+    height: 32px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+#right-navbar {
+display: flex;
+gap: 40px;
+
+height: 40px;
+align-items: center;
+justify-content: center;
+margin-right: 50px;
+    
+}
+#navbar-youtube h1{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+#navbar-youtube a{
+    text-decoration: none;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1c1c;
+
+}
+#main #video{
+width: 100%;
+height: 530px;
+}
+#video_details{
+    color: white;
+    margin-top: 10px;
+    line-height: 35px;
+    margin-left: 60px;
+    font-size: medium;
+}
+.main-iconSection{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    justify-content: flex-end;
+
+}
+.main-nav-icon{
+    color: white;
+}
+#views{
+    color: rgb(186, 174, 174);
+}

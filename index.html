@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/c7b3d3226c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="#" class="menu-bars" id="show-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <div id="navbar-youtube">
+            <a href="#"><h1><i class="fab fa-youtube" id="youtube-logo"></i>Youtube</h1></a>
+
+        </div>
+        <div id="middle-navbar">
+            <input type="text" id="query" placeholder="Search Here">
+            <ul class="nav-menu-items">
+                <button id="" onclick="searchVideos()"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
+            
+                <i class="fa-solid fa-microphone-lines fa-2xl"></i>
+            </ul>
+
+        </div>
+        
+        <div id="right-navbar">
+            <!-- <i class="fa-light fa-video-plus fa-2xl"></i> -->
+            <p><a href="#"><i class="fa-solid fa-bell fa-2xl nav-icon"></i></a></p>
+            <p><a href="login.html" id="login"><i class="fa-solid fa-user fa-2xl nav-icon"></i>Login</a></p>
+        
+        </div>
+    </div>
+    
+    <div id="nav-menu">
+        <ul class="nav-menu-items">
+            <div id="navbar-toggle">
+                <a href="#" class="menu-bars" id="hide-menu">
+                    <i class="fas fa-bars nav-icons"></i>
+                </a>
+                <a href="#"><h1><i class="fab fa-youtube" id="youtube-logo"></i>Youtube</h1></a>
+            </div>
+            <hr/>
+            <div class="nav-section">
+                <li class="nav-text"><a href="./index.html"><i class="fas fa-home nav-icon"></i>Home</a></li>
+                <li class="nav-text"><a href="#"><i class="fas fa-fire nav-icon"></i>Trending</a></li>
+                <li class="nav-text"><a href="#"><i class="fab fa-youtube nav-icon"></i>Subscription</a></li>
+
+            </div>
+            <hr/>
+            <div class="nav-section">
+                <li class="nav-text"><a href="#"><i class="fas fa-play-circle nav-icon"></i>Library</a></li>
+                <li class="nav-text"><a href="#"><i class="fas fa-history nav-icon"></i>History</a></li>
+                <li class="nav-text"><a href="#"><i class="fas fa-clock nav-icon"></i>Watch Later</a></li>
+
+            </div>
+        </ul>
+    </div>
+    <div id="filter-div">
+        <select name="" id="filter" onchange="filter()">
+            <option value="relevance">Relevance</option>
+            <option value="date">Date</option>
+            <option value="rating">Rating</option>
+            <option value="viewCount">View Count</option>
+        </select>
+    </div>
+
+    <div id="container">
+        <!-- <img src="https://media3.giphy.com/media/3ohs7TrCSp7c8ZrxBe/200w.webp?cid=ecf05e47ljd0dls3nx2bnwqkhpczze5qwl4eofg9rcjttuid&rid=200w.webp&ct=g" alt="" id="loader"> -->
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>

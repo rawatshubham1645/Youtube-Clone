@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /* color: black; */
+}
+
+#logo{
+    
+    width:20%;
+    height: 50px;
+    
+    margin: auto;
+    margin-top: 20px;
+}
+#logo>img{
+
+    width:100%;
+}
+.heading1{
+    margin-top: 120px;
+    
+    color: grey;
+}
+form{
+    width: 20%;
+    
+    margin: auto;
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 10rem;
+    /* border: 2px solid black; */
+    margin-top: 30px;
+}
+form #name,#email,#password ,#username,#mobile,#description{
+    border-radius: 10px;
+    /* border-color: rgb(177, 237, 237); */
+    border-color: red;
+    padding: 7px 20px;
+    text-align: left;
+}
+/* form #name,#email,#password ,#username,#mobile,#description,:hover{
+    border-color: red;
+} */
+/* input[type="submit"] {
+   
+    border-radius: 15px;
+    padding: 8px 20px;
+    background: linear-gradient(180deg, #089AFF 0%, #0D96FF 100%);
+    border-color: #089AFF;
+    color: aliceblue;
+} */
+#button{
+    border-radius: 15px;
+    padding: 8px 20px;
+    background: linear-gradient(180deg, #089AFF 0%, #0D96FF 100%);
+    /* border-color: #089AFF; */
+    border-color: red;
+    color: aliceblue; 
+}
+ #para p {
+    margin-top: 10px;
+   font-size: 15px;
+   color: rgb(48, 45, 45);
+}
+#para  a{
+    color: #089AFF;
+
+}
+#para  a:hover{
+    color: #2888cc;
+    
+}
+.social-media .social{
+    padding-top: 30px;
+  }
+  .social-media .social a{
+    padding: 0 10px;
+    font-size: 40px;
+    /* color: #2888cc; */
+    color: red;
+  }
+  .social-media .social a:hover{
+    color: grey;
+    transition-delay: 0.2s;
+  }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAflBMVEX/////AAD/+fn/ra3/kZH/3Nz/7Oz/sbH/nJz/p6f/1NT/EBD/zMz/vr7/4eH/3d3/xMT/pKT/lZX/8fH/cnL/0ND/jIz/trb/eHj/ISH/QkL/WFj/h4f/amr/fHz/R0f/ZGT/Kyv/OTn/UlL/MjL/RET/Xl7/goL/VFT/e3vLg+1WAAADB0lEQVR4nO3ca1ObUBSFYS4JEAKEgDEaL9Haavv//2CNU6fVOuPeJxz3bH2fzzrjWhLOjZAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgq8jGolvVTd+32zLPF+t1VQ3D7NEwVNV6kefltu37pp6vijGz/mMnVNTtenZ2v79dpmrnu4uTy6psOusQR+gfvumDv2l5lbu8MPKJ8j+7dtdCtpu4gkeNdSidYvoGHpXWsVSiVODrSriP1EHq556wiVVBemYdTewuWgduLoQxXgVpbh1OqI3YwY11OKHLiB2k1uGE9jE7KKzTycSswMkUIeYt0ctNsY7awaV1PJGYw4KXgWERtYOddTyRU1GW76ElWMcTOZNFKT9zBxeiKFnoXMrFiuGHOEohq+slF5Okc8W/s5H98L/mxvFEZFGeL2n1KFKbhhPSdZBk17oOestsUsoOkqRTLbJau2RimbqDJOkVp1AeNpeFS6ZXQ1wl7mBhE0tFeLTwepjPToQdrE1S6XRhHSTJXHY6WRlk0gruQLjiHD48kd48vIMkmb3/i7MPzhPiqA6S8d3bwunHxglyXAfdu+czn70DyeDg4bNwxD1RNEnwcE8MnB+IJ4sexsbADsSLBg9zpKC5smLx6GGuHLJm0mwieFgz6dfOus0kD2tnbQfaTcVPuIei3lx2sZem2VMNOGRYGccTkQ1yhw7qkMMmF3vrsgfzsmS8CWjAyRmL7KwtG4IacHLWJtgDOMLSOp5I3LP3vXU8kT5qB1fW8USEGwiBPGyhiBcMgXw8kxX32byNdTqZiI9sp+lonU5G9kBSIOtwQjEHBh/DQtyboosdlIOwhYCIdTSxeDMEH7ODJ7JlUwDrYBq3cSpw8Uzas0z/zJ2Aj+8u/DX9fXHp7/vvzVRfev/Dwxnb/7rqJuCtB2+5O/X2MXihqNt8eDi5UL8F4nz38+rXbL1tOhc7iHJPrwOZ15um7/u23ZZlflCW28NbQPpmU89XXTE6WRcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBp/AbhqSeqCnPYIQAAAABJRU5ErkJggg==" alt="">
+    </div>
+    <div class="heading1">
+        <h3>Sign Up to Youtube</h3>
+    </div>
+    
+            
+        <form action="">
+            <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAflBMVEX/////AAD/+fn/ra3/kZH/3Nz/7Oz/sbH/nJz/p6f/1NT/EBD/zMz/vr7/4eH/3d3/xMT/pKT/lZX/8fH/cnL/0ND/jIz/trb/eHj/ISH/QkL/WFj/h4f/amr/fHz/R0f/ZGT/Kyv/OTn/UlL/MjL/RET/Xl7/goL/VFT/e3vLg+1WAAADB0lEQVR4nO3ca1ObUBSFYS4JEAKEgDEaL9Haavv//2CNU6fVOuPeJxz3bH2fzzrjWhLOjZAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgq8jGolvVTd+32zLPF+t1VQ3D7NEwVNV6kefltu37pp6vijGz/mMnVNTtenZ2v79dpmrnu4uTy6psOusQR+gfvumDv2l5lbu8MPKJ8j+7dtdCtpu4gkeNdSidYvoGHpXWsVSiVODrSriP1EHq556wiVVBemYdTewuWgduLoQxXgVpbh1OqI3YwY11OKHLiB2k1uGE9jE7KKzTycSswMkUIeYt0ctNsY7awaV1PJGYw4KXgWERtYOddTyRU1GW76ElWMcTOZNFKT9zBxeiKFnoXMrFiuGHOEohq+slF5Okc8W/s5H98L/mxvFEZFGeL2n1KFKbhhPSdZBk17oOestsUsoOkqRTLbJau2RimbqDJOkVp1AeNpeFS6ZXQ1wl7mBhE0tFeLTwepjPToQdrE1S6XRhHSTJXHY6WRlk0gruQLjiHD48kd48vIMkmb3/i7MPzhPiqA6S8d3bwunHxglyXAfdu+czn70DyeDg4bNwxD1RNEnwcE8MnB+IJ4sexsbADsSLBg9zpKC5smLx6GGuHLJm0mwieFgz6dfOus0kD2tnbQfaTcVPuIei3lx2sZem2VMNOGRYGccTkQ1yhw7qkMMmF3vrsgfzsmS8CWjAyRmL7KwtG4IacHLWJtgDOMLSOp5I3LP3vXU8kT5qB1fW8USEGwiBPGyhiBcMgXw8kxX32byNdTqZiI9sp+lonU5G9kBSIOtwQjEHBh/DQtyboosdlIOwhYCIdTSxeDMEH7ODJ7JlUwDrYBq3cSpw8Uzas0z/zJ2Aj+8u/DX9fXHp7/vvzVRfev/Dwxnb/7rqJuCtB2+5O/X2MXihqNt8eDi5UL8F4nz38+rXbL1tOhc7iHJPrwOZ15um7/u23ZZlflCW28NbQPpmU89XXTE6WRcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBp/AbhqSeqCnPYIQAAAABJRU5ErkJggg==" alt=""> -->
+            
+            <input type="text" id="name" placeholder="Enter Name"><br>
+            
+            <input type="text" id="email"placeholder="Enter email"><br>
+            
+            <input type="text" id="username"placeholder="Enter username"><br>
+            
+            <input type="password" id="password"placeholder="Enter password"><br>
+
+            
+            <input type="number" id="mobile"placeholder="Enter mobile"><br>
+            
+            <input type="text" id="description"placeholder="Enter Description"><br>
+            
+        </form>
+        <button onclick="Register()" id="button">Register</button>
+        <div id="para">
+            <p>Ready for Login?  <a href="./login.html">Login</a></p>
+        </div>
+        <section class="social-media">
+            <div class="social">
+                <a href="https://twitter.com/OfficialAyoa/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/AyoaApp/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/c/OpenGenius"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/officialayoa/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/uas/login-submit"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+</body>
+</html>
+<script src="./auth.js"></script>
